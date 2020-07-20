@@ -20,13 +20,13 @@ const cads = [
         'Aged 30',
         "My new job in a new city didn’t allow me to save much , I got very good advice to save small yet smart towards a dream . Now I have my own house"),
     createData('KP',
-        'Kumar P',
+        'Neha P',
         'Aged 40 ',
         "There are no retirement benefits in a private job , my goals were identified and we started on a path for a secure & wealthy post work life investments"),
     createData('AS',
-        'Arun',
-        'Aged 30',
-        "My new job in a new city didn’t allow me to save much , I got very good advice to save small yet smart towards a dream . Now I have my own house"),
+        'Mr Guleria',
+        'Aged 65',
+        "My retirement savings are secure & provide me a steady income. I have a friend taking care of my investments"),
 
 ];
 
