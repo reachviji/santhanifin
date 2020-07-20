@@ -13,8 +13,9 @@ export default function Home() {
     return (
         <div className={classes.heroContent}>
             <Container maxWidth="xl">
-                <ReactTypingEffect className={classes.typing} text={['Welcome!']}
-                    speed={50} eraseDelay={1000} />
+                <Typography className={classes.typing} align="center" variant="h4">
+                    Welcome!
+                    </Typography>
                 <Typography align="center" color="textSecondary" paragraph>
                     Santhani Financial Services, established in 1982 , has been a pioneer in
                     wealth creation and tax saving investments. Over 1000+ patrons belong to all

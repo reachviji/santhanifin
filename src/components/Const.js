@@ -18,8 +18,6 @@ export const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(0, 3),
     },
     typing: {
-        fontSize: 40,
-        margin: 500,
         fontWeight: "bold",
         color: "#0d47a1",
     },
