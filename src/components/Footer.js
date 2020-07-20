@@ -8,10 +8,10 @@ export default function Footer() {
     return (
 
         <footer className={classes.footer}>
-            <Typography className={classes.whitetext} variant="h6" align="center" gutterBottom>
-                Mutual Fund investments are subject to market risks. Please read all scheme related documents carefully before investing.
+            <Typography className={classes.footertext} align="center" gutterBottom>
+                Disclaimer: Mutual Fund investments are subject to market risks. Please read all scheme related documents carefully before investing.
         </Typography>
-            <Typography className={classes.whitetext} variant="subtitle1" align="center" color="textSecondary" component="p">
+            <Typography className={classes.footertext} align="center" color="textSecondary" component="p">
                 Past performance is not an indicator of future returns.
         </Typography>
             <Copyright />

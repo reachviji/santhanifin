@@ -1,21 +1,8 @@
-import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
-import withStyles from "@material-ui/core/styles";
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Collapse from '@material-ui/core/Collapse';
-import clsx from 'clsx';
-import IconButton from '@material-ui/core/IconButton';
 import Popover from '@material-ui/core/Popover';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Dialog from '@material-ui/core/Dialog';
 import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ButtonBase from '@material-ui/core/ButtonBase';
 import Button from '@material-ui/core/Button';
 import * as Constants from './Const';
 import Card from '@material-ui/core/Card';
@@ -26,26 +13,18 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
 const defaultProps = {
-    bgcolor: "info.main",
+    bgcolor: "#64b5f6",
+    boxShadow: '0 3px 5px 5px rgba(0, 171, 255, .5)',
     m: 1,
     border: 0,
 };
 
 export default function FormRow1() {
-    const [open, setOpen] = React.useState(false);
-    const color = Constants.styles;
     const classes = Constants.useStyles();
 
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-
-    const handleClose = () => {
-        setOpen(false);
-    };
     return (
         <Container className={classes.cardGrid} maxWidth="xl">
-            <Typography className={classes.whitetext} component="h2" variant="h4" align="center" color="textSecondary" gutterBottom>
+            <Typography className={classes.whitetext} component="h2" variant="h5" align="center" color="textSecondary" gutterBottom>
                 GET STARTED
                 <Box fontWeight="fontWeightBold" m={1}>
                     Begin your investment journey
@@ -61,10 +40,10 @@ export default function FormRow1() {
                                 title={card.Name}
                             />
                             <CardContent className={classes.cardContent}>
-                                <Typography gutterBottom variant="h5" component="h2">
+                                <Typography className={classes.cardTitle} gutterBottom variant="h6">
                                     {card.Name}
                                 </Typography>
-                                <Typography variant="h6">
+                                <Typography className={classes.cardSubtitle} variant="h7">
                                     {card.Desc}
                                 </Typography>
                             </CardContent>
@@ -72,7 +51,6 @@ export default function FormRow1() {
                                 <PopupState variant="popover" popupId="popover">
                                     {(popupState) => (
                                         <div>
-
                                             <Button className={classes.button} variant="contained" color="primary" {...bindTrigger(popupState)}>
                                                 Details
                                             </Button>
@@ -88,10 +66,13 @@ export default function FormRow1() {
                                                 }}
                                             >
                                                 <Box color="info.contrastText" {...defaultProps} p={3} >
-                                                    <Typography gutterBottom variant="h5" component="h2">Few details of {card.Name} are: </Typography>
-                                                    <Typography paragraph>01. {card.Det1} </Typography>
-                                                    <Typography paragraph>02. {card.Det2} </Typography>
-                                                    <Typography paragraph>03. {card.Det3} </Typography>
+                                                    <Typography className={classes.cardSubtitle} >Aggressive  </Typography>
+                                                    <Typography className={classes.popupDet}>{card.Det1} </Typography>
+                                                    <Typography className={classes.popupDet} paragraph>{card.Det2} </Typography>
+                                                    <Typography className={classes.cardSubtitle} >Conservative  </Typography>
+                                                    <Typography className={classes.popupDet} >{card.Det3} </Typography>
+                                                    <Typography className={classes.popupDet} paragraph>{card.Det4} </Typography>
+                                                    <Typography className={classes.popup} gutterBottom >* All these are simple examples.There is huge baskets of schemes available as personal choice.</Typography>
                                                 </Box>
                                             </Popover>
                                         </div>
@@ -102,6 +83,6 @@ export default function FormRow1() {
                     </Grid>
                 ))}
             </Grid>
-        </Container>
+        </Container >
     );
 }

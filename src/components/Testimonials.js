@@ -34,12 +34,12 @@ export default function Testimonial() {
     const classes = Constants.useStyles();
     return (
         <div className={classes.testGrid}>
-            <Typography className={classes.whitetext} component="h2" variant="h4" align="center" color="textSecondary" gutterBottom>
+            <Typography className={classes.whitetext} variant="h5" align="center" color="textSecondary" gutterBottom>
                 <Box fontWeight="fontWeightBold" m={1}>
                     From Our Users
                     </Box>
             </Typography>
-            <Grid container spacing={4}>
+            <Grid container spacing={1}>
                 {cads.map((cad) => (
                     <Paper className={classes.testimonial} key={cad.Name}>
                         <Grid item xl>

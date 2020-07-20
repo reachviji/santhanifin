@@ -1,14 +1,12 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import * as Constants from './Const';
 
 export default function Copyright() {
+    const classes = Constants.useStyles();
     return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
-                Santhani Finance Consultancy
-      </Link>{' '}
+        <Typography className={classes.description} variant="body2" color="textSecondary" align="center">
+            {'Copyright © Santhani Finance Consultancy'}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
