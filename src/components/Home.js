@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
 import EmailIcon from '@material-ui/icons/Email';
 import * as Constants from '../components/Const';
@@ -32,20 +33,22 @@ export default function Home() {
                     – HDFC top performer 2008 , LIC Top investor  - 2010, etc.
                     Best investment consultant in Lucknow , UP and Bangalore , karnataka
             </Typography>
-                <div className={classes.heroButtons}>
-                    <Grid container spacing={4} justify="center">
-                        <Grid item>
-                            <Button variant="contained" color="primary" startIcon={<PhoneInTalkIcon />} size="medium">
-                                +91 - 9936468708
-                        </Button>
+                <Grid container spacing={5} justify="center">
+                    <Paper className={classes.heroContact} elevation={0}>
+                        <Grid className={classes.heroContact} item>
+                            <Typography align="center">
+                                <PhoneInTalkIcon />{' '} +91 - 9936468708
+                            </Typography>
                         </Grid>
-                        <Grid item>
-                            <Button variant="contained" color="primary" startIcon={<EmailIcon />} size="medium">
-                                abs2001@gmail.com
-                        </Button>
+                    </Paper>
+                    <Paper className={classes.heroContact} elevation={0}>
+                        <Grid className={classes.heroContact} item>
+                            <Typography align="center">
+                                {'         '} <EmailIcon />{' '} abs2001@gmail.com
+                            </Typography>
                         </Grid>
-                    </Grid>
-                </div>
+                    </Paper>
+                </Grid>
             </Container>
         </div>
     )

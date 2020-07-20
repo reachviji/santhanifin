@@ -34,6 +34,11 @@ export const useStyles = makeStyles((theme) => ({
         backgroundColor: "#bbdefb",
         padding: theme.spacing(2, 0, 3),
     },
+    heroContact: {
+        backgroundColor: "#bbdefb",
+        padding: theme.spacing(2, 2, 1),
+        fontWeight: "bold",
+    },
     toolbar: {
         minHeight: 40,
         alignItems: 'flex-start',
