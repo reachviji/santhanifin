@@ -6,7 +6,7 @@ export default function Copyright() {
     const classes = Constants.useStyles();
     return (
         <Typography className={classes.description} variant="body2" color="textSecondary" align="center">
-            {'Copyright © Santhani Finance Consultancy'}
+            {'Copyright © Santhani Financial Consultancy'}
             {new Date().getFullYear()}
             {'.'}
         </Typography>
