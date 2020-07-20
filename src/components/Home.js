@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import PhoneInTalkIcon from '@material-ui/icons/PhoneInTalk';
@@ -14,10 +13,10 @@ export default function Home() {
     return (
         <div className={classes.heroContent}>
             <Container maxWidth="xl">
-                <ReactTypingEffect className={classes.typing} text={['About Me']}
+                <ReactTypingEffect className={classes.typing} text={['Welcome!']}
                     speed={50} eraseDelay={1000} />
                 <Typography align="center" color="textSecondary" paragraph>
-                    Santhani Financial Consultancy, established in 1982 , has been a pioneer in
+                    Santhani Financial Services, established in 1982 , has been a pioneer in
                     wealth creation and tax saving investments. Over 1000+ patrons belong to all
                     walks of life – from retirees,1st jobbers , maids, peons , high flying lawyers,
                     doctors and IT professionals .We offer the full range of investment products

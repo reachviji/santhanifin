@@ -16,7 +16,7 @@ export default function Navigation() {
                     className="d-inline-block align-top"
                     alt=" "></img>
                 <Typography>
-                    Santhani Financial Consultancy
+                    Santhani Financial Services
           </Typography>
             </Toolbar>
         </AppBar>
